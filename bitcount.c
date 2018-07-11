@@ -18,6 +18,7 @@ int main()
 int bitcount(unsigned x)
 {
     int b;
+    // The expression x&=(x-1) can delete a binary bit with the rightmost value of 1 in x
     for(b = 0; x != 0; x &= (x-1)){
         b++;
         // printf("x = %d\n", x);
